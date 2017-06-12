@@ -11,7 +11,7 @@ define(['angularAMD','userService'],function (angularAMD) {
                 alert("success");
                 
             },function(msg){
-                console.log(msg+"1");
+                console.log(msg+ "new change");
                 alert("Thats an Error: Msg:" + msg);
             });
         };
