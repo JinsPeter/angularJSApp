@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sample Application</title>   
+    <base href="/" />
+    <link rel="stylesheet" href="styles/style.css"/>
+    <script data-main="main.js" src="scripts/require.js"> </script>
+        
+</head>
+<body data-ng-controller="AppController as appCtrl" ng-cloak>
+    <header>
+        <div>This is App Header</div>
+        <button class="outer"><a ng-href="Form">Form</a></button>
+        <button class="outer"><a ng-href="Home">Home</a></button>
+    </header>
+    <section>
+        <ng-view>
+
+        </ng-view>
+    </section>
+</body>
+</html>
