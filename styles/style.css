@@ -1,6 +1,5 @@
 body {
  padding-top:25px;
- background-color:#454545;
  margin-left:10px;
  margin-right:10px;
 }
@@ -123,4 +122,43 @@ label.error {
 }
 button.outer{
     z-index: 1000px;
+}
+
+descrete-slider{
+  display: block;
+}
+descrete-slider .outer{
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  width: 300px;
+  
+}
+
+
+
+.ui-widget-content{
+  width: 600px;
+  height: 45px;
+  background-image: -webkit-gradient(linear, left, right, from(orange), to(green));
+  background-image: -webkit-linear-gradient(left, orange, green);
+  background-image: -moz-linear-gradient(left, orange, green);
+  background-image: linear-gradient(to right, orange, green);
+}
+
+.ui-widget-header{
+
+  background: transparent;
+}
+.ui-slider-handle{
+  height: 55px !important;
+  width: 10px !important;
+  border-radius: 10px;
+  background: #fff !important;
+}
+#YourDiv {
+    float: right;
+    height: 100%;
+    background:#cecece;
+    border-radius: 0 4px 4px 0;
 }

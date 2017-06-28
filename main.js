@@ -6,6 +6,8 @@ require.config({
         'angular': 'scripts/angular.min',
         'angularRoute': 'scripts/angular-route.min',
         'angularAMD': 'scripts/angularAMD.min',
+        'jQuery':'scripts/jquery.min',
+        'jQuery-ui':'scripts/jquery-ui',
 
         'app': 'ngApp/app',
         //Controllers
@@ -14,13 +16,16 @@ require.config({
 
         //Services
         'configService' : 'ngServices/Common/configService',
-        'userService' : 'ngServices/userService'
-
+        'userService' : 'ngServices/userService',
+        //directives
+        'descreteSlider': 'ngDirectives/Common/descreteSliderDirective',
 
     },
     shim:{
-        'angularAMD': ['angular'],
-        'angularRoute': ['angular']
+        'angularAMD': {deps:['angular']},
+        'angularRoute': {deps:['angular']},
+        'jQuery-ui':{deps:['jQuery']},
+        'descreteSlider':{deps:['jQuery','jQuery-ui']}
     },
     deps: ['app']
 
